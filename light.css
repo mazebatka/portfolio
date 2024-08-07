@@ -89,10 +89,13 @@ body{
 #bio p{
     text-align: center;
 }
-.text-box{
-    text-align: center;
+.bio-text{
     width: 148px;
     height: 102px;
+}
+.text-box{
+    text-align: center;
+    
 }
 #contact{
     width: 618px;
@@ -120,6 +123,10 @@ body{
     border:none;
     border-radius: 10px;
     background-color: #FFFFFF;
+}
+.contact-button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 #download{
     background-color: #FBD144;
@@ -155,7 +162,7 @@ body{
 #portfolio-pics img{
     width: 362px;
     height: 226px;
-    
+    border-radius:15px;
 }
 h5{
     color: #575757;
@@ -165,3 +172,66 @@ h5{
 path{
     fill: #575757;
 }
+    @media (max-width: 620px) {
+        body {
+          gap: 50px;
+          display: flex;
+          justify-content: center;
+        }
+      
+        #theme-switch{
+          width: 48px;
+          height: 48px;
+        }
+      
+        #theme-switch svg {
+          width: 24px;
+          height: 24px;
+        }
+      
+        #profile-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        #profile-info img {
+          width: 124px;
+          height: 124px;
+        }
+      
+        #profile-name {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+         
+        }
+      
+        #profile-name h1 {
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 48px;
+        }
+      
+        #profile-name p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+        }
+        #bio{
+            margin-top: 30px;
+            width: 376px;
+            height: 106px;
+            display: flex;
+            justify-content: center;
+
+        }
+        #bio p{
+            font-size: 14px;
+            
+        }
+        .bio-text{
+            display: flex;
+            flex-direction: column;
+        }
+      }
